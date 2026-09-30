@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presh eXclusive | Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <div class="container announcement-inner">
+        <span>Secure checkout for elegant fashion shopping.</span>
+        <div class="announcement-links">
+          <a href="products.html">Track Order</a>
+          <a href="account.html">Help Center</a>
+          <a href="account.html">Sell with us</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text">Presh eXclusive</span></a>
+        <form class="search-box" action="products.html" method="get">
+          <span class="search-icon">⌕</span>
+          <input type="search" name="search" placeholder="Search tops, shirts, trousers, dresses..." aria-label="Search products" />
+        </form>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="products.html">New Arrivals</a>
+          <a href="account.html">Track Order</a>
+          <a href="account.html">Account</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-link" href="account.html" aria-label="Wishlist">♡</a>
+          <a class="cart-link" href="cart.html" aria-label="Cart">Shopping Bag <span id="cart-count">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container page-top">
+          <div>
+            <span class="eyebrow">Secure checkout</span>
+            <h1>Complete your purchase</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-shell">
+        <div class="container checkout-layout">
+          <div class="form-shell">
+            <h3>Delivery details</h3>
+            <form id="checkout-form" class="checkout-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="first-name">First name</label>
+                  <input id="first-name" name="firstName" type="text" placeholder="First name" />
+                  <small>Please enter your first name.</small>
+                </div>
+                <div class="field">
+                  <label for="last-name">Last name</label>
+                  <input id="last-name" name="lastName" type="text" placeholder="Last name" />
+                  <small>Please enter your last name.</small>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
+                <small>Please enter a valid email.</small>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" placeholder="0803 000 0000" />
+                <small>Please enter a valid phone number.</small>
+              </div>
+
+              <div class="field">
+                <label for="address">Delivery address</label>
+                <textarea id="address" name="address" placeholder="Street, area, landmark"></textarea>
+                <small>Please enter your delivery address.</small>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="city">City</label>
+                    <input id="city" name="city" type="text" placeholder="City or town" />
+                  <small>Please choose your city.</small>
+                </div>
+                <div class="field">
+                  <label for="state">State</label>
+                  <input id="state" name="state" type="text" placeholder="State" />
+                  <small>Please choose your state.</small>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="payment-method">Payment method</label>
+                <select id="payment-method" name="paymentMethod">
+                  <option value="">Select payment method</option>
+                  <option>Debit or credit card</option>
+                  <option>Bank transfer</option>
+                  <option>Secure online payment</option>
+                </select>
+                <small>Please choose a payment method.</small>
+              </div>
+
+              <p class="delivery-note">Your order is processed after payment is confirmed. We’ll confirm the delivery fee and payment instructions with you on WhatsApp.</p>
+              <button class="submit-btn" type="submit">Continue on WhatsApp</button>
+            </form>
+          </div>
+
+          <aside id="checkout-summary" class="summary-card"></aside>
+        </div>
+      </section>
+
+      <section class="policy-section" id="store-policies">
+        <div class="container">
+          <div class="section-heading policy-heading">
+            <div>
+              <span class="eyebrow">Before you order</span>
+              <h2>Delivery, payment and returns</h2>
+            </div>
+          </div>
+          <div class="policy-grid">
+            <article class="policy-item">
+              <h3>Delivery</h3>
+              <p>We deliver nationwide. Orders are processed within 1–2 business days and typically arrive in 2–5 business days, depending on your location. Delivery fees are based on your address and confirmed before payment. We’ll update you when your order is dispatched.</p>
+            </article>
+            <article class="policy-item">
+              <h3>Payment</h3>
+              <p>Pay by debit or credit card, bank transfer, or secure online payment. Payment must be confirmed before an order is processed.</p>
+            </article>
+            <article class="policy-item">
+              <h3>Returns and exchanges</h3>
+              <p>Request a return or exchange within 7 days of delivery. Items must be unworn, unused, undamaged, and in original packaging. Jewelry must be in its original condition; sale and final-sale items are excluded. Contact us within 48 hours about a wrong, damaged, or defective item. Delivery fees are non-refundable unless the issue was our error.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text">Presh eXclusive</span></a>
+          <p>Fashion-first shopping for women who want standout style and ease.</p>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="index.html">About Presh eXclusive</a></li>
+            <li><a href="account.html">Customer support</a></li>
+            <li><a href="account.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Shopping</h4>
+          <ul>
+            <li><a href="products.html">Delivery information</a></li>
+            <li><a href="cart.html">Track order</a></li>
+            <li><a href="#store-policies">Delivery, returns and refunds</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Business</h4>
+          <ul>
+            <li><a href="account.html">Sell with us</a></li>
+            <li><a href="checkout.html">Payment info</a></li>
+            <li><a href="admin.html">Admin demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+2348037609748">0803 760 9748</a></li>
+            <li><a href="https://wa.me/2348037609748" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.tiktok.com/@presh.exclusive" target="_blank" rel="noreferrer">TikTok @Presh.exclusive</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Presh eXclusive</span>
+        <span>Privacy Policy • Terms & Conditions</span>
+      </div>
+    </footer>
+
+    <script src="catalog-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presh eXclusive | Nigerian Fashion Boutique</title>
+    <meta
+      name="description"
+      content="Presh eXclusive brings chic, trend-led fashion and personal shopping support to customers across Nigeria."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="storefront-home" data-page="home">
+    <div class="announcement-bar">
+      <div class="container announcement-inner">
+        <span>Nationwide delivery across Nigeria • Port Harcourt • Uyo • Lagos</span>
+        <div class="announcement-links">
+          <a href="products.html">Track Order</a>
+          <a href="account.html">Help Center</a>
+          <a href="account.html">Sell with us</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Presh eXclusive home">
+          <span class="brand-mark">P</span>
+          <span class="brand-text">Presh eXclusive</span>
+        </a>
+
+        <form class="search-box" action="products.html" method="get">
+          <span class="search-icon">⌕</span>
+          <input
+            type="search"
+            name="search"
+            id="catalog-search"
+            placeholder="Search dresses, tops, bags, beauty..."
+            aria-label="Search products"
+          />
+        </form>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="#categories">Collections</a>
+          <a href="#new-arrivals">New Arrivals</a>
+          <a href="account.html">Account</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="icon-link" href="account.html" aria-label="Wishlist">♡</a>
+          <a class="cart-link" href="cart.html" aria-label="Cart">
+            Shopping Bag <span id="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <span class="eyebrow">Nigerian fashion boutique</span>
+            <h1>Fresh looks for every day, every outing.</h1>
+            <p>
+              Discover elegant women’s outfits, tailored essentials, and trend-led pieces curated for the Nigerian wardrobe.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary">Shop new arrivals</a>
+              <a href="account.html" class="btn btn-secondary">Personal shopping</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>2k+</strong><span>Best sellers</span></li>
+              <li><strong>4.9/5</strong><span>Customer love</span></li>
+              <li><strong>NGN</strong><span>Local pricing</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured fashion items">
+            <div class="feature-card feature-main">
+              <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Woman in fashion outfit" />
+            </div>
+            <div class="feature-card feature-side">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Fashion styling look" />
+            </div>
+            <div class="floating-pill">Best sellers</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-categories">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Shop by category</span>
+            <h2>Curated for your wardrobe</h2>
+          </div>
+          <a href="products.html">View all</a>
+        </div>
+
+        <div class="container category-grid">
+          <a href="products.html?category=dresses" class="category-card">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Women dress collection" />
+            <div class="category-content">
+              <h3>Dresses</h3>
+              <p>Elegant everyday and event picks</p>
+            </div>
+          </a>
+          <a href="products.html?category=tops" class="category-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Top collection" />
+            <div class="category-content">
+              <h3>Tops</h3>
+              <p>Statement pieces and staples</p>
+            </div>
+          </a>
+          <a href="products.html?category=sets" class="category-card">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80" alt="Matching set collection" />
+            <div class="category-content">
+              <h3>Sets</h3>
+              <p>Co-ords and matching looks</p>
+            </div>
+          </a>
+          <a href="products.html?category=trousers" class="category-card">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80" alt="Trouser collection" />
+            <div class="category-content">
+              <h3>Trousers</h3>
+              <p>Tailored and effortless silhouettes</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="deals" id="new-arrivals">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">New arrivals</span>
+            <h2>Best selling outfits</h2>
+          </div>
+          <div class="countdown-box">Fresh this week</div>
+        </div>
+        <div class="container js-deal-grid deal-grid" id="flash-deals"></div>
+      </section>
+
+      <section class="products-section">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Customer favourites</span>
+            <h2>Shop the collection</h2>
+          </div>
+          <a href="products.html">View all</a>
+        </div>
+        <div class="container storefront-categories" aria-label="Shop by category">
+          <button class="pill active" type="button" data-category="all">All</button>
+          <button class="pill" type="button" data-category="corporate">Corporate</button>
+          <button class="pill" type="button" data-category="sets">Set pieces</button>
+          <button class="pill" type="button" data-category="tops">Top</button>
+          <button class="pill" type="button" data-category="dresses">Dress</button>
+          <button class="pill" type="button" data-category="bottoms">Bottoms</button>
+          <button class="pill" type="button" data-category="accessories">Accessories</button>
+          <button class="pill" type="button" data-category="beauty">Beauty</button>
+        </div>
+        <div class="container storefront-result-count" id="result-count" aria-live="polite"></div>
+        <div class="container catalog-grid" id="catalog-grid"></div>
+        <nav class="container catalog-pagination" id="catalog-pagination" aria-label="Product pages"></nav>
+      </section>
+
+      <section class="personal-shopping">
+        <div class="container personal-box">
+          <div class="personal-copy">
+            <span class="eyebrow">Personal shopping</span>
+            <h2>Can't find what you're looking for?</h2>
+            <p>
+              Send us a product link or a screenshot and our team can help source a similar look. Availability, price and delivery must be confirmed before order acceptance.
+            </p>
+            <div class="personal-points">
+              <div>✔ Style matching for wardrobes and events</div>
+              <div>✔ Help with sizing and color selection</div>
+              <div>✔ Sourcing for Nigerian delivery and pickup</div>
+            </div>
+          </div>
+          <div class="personal-visual">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Fashion styling consultation" />
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-section">
+        <div class="container">
+          <div class="section-heading compact-heading">
+            <div>
+              <span class="eyebrow">Why Presh eXclusive</span>
+              <h2>Built for modern Nigerian fashion shopping</h2>
+            </div>
+          </div>
+
+          <div class="trust-grid">
+            <div class="trust-card">
+              <div class="trust-icon">✨</div>
+              <h3>Curated looks</h3>
+              <p>Fashion-forward pieces chosen for everyday style and social occasions.</p>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon">📍</div>
+              <h3>Nationwide</h3>
+              <p>Delivery information and support across major Nigerian cities.</p>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon">💬</div>
+              <h3>Personal styling</h3>
+              <p>Get help finding the right fit, color and outfit direction.</p>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon">🔒</div>
+              <h3>Demo-safe</h3>
+              <p>Storefront is ready for approved products, secure checkout and live payment integration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-shell">
+        <div class="container newsletter-box">
+          <div>
+            <span class="eyebrow" style="background: rgba(255,255,255,0.12); color: #fff;">Style updates</span>
+            <h2>Get first access to new arrivals.</h2>
+          </div>
+          <form class="newsletter-form" novalidate>
+            <input type="email" placeholder="Enter your email" aria-label="Email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark">P</span>
+            <span class="brand-text">Presh eXclusive</span>
+          </a>
+          <p>Presh eXclusive helps Nigerian shoppers discover standout fashion and personal shopping support with ease.</p>
+        </div>
+
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="index.html">About Presh eXclusive</a></li>
+            <li><a href="account.html">Customer support</a></li>
+            <li><a href="account.html">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Shopping</h4>
+          <ul>
+            <li><a href="products.html">Delivery information</a></li>
+            <li><a href="cart.html">Track order</a></li>
+            <li><a href="checkout.html#store-policies">Delivery, returns and refunds</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Business</h4>
+          <ul>
+            <li><a href="account.html">Sell with us</a></li>
+            <li><a href="checkout.html">Payment info</a></li>
+            <li><a href="admin.html">Admin demo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+2348037609748">0803 760 9748</a></li>
+            <li><a href="https://wa.me/2348037609748" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.tiktok.com/@presh.exclusive" target="_blank" rel="noreferrer">TikTok @Presh.exclusive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Presh eXclusive</span>
+        <span>Privacy Policy • Terms & Conditions</span>
+      </div>
+    </footer>
+
+    <script src="catalog-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presh eXclusive | Shop Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <div class="container announcement-inner">
+        <span>Nationwide delivery across Nigeria • Port Harcourt • Uyo • Lagos</span>
+        <div class="announcement-links">
+          <a href="products.html">Track Order</a>
+          <a href="account.html">Help Center</a>
+          <a href="account.html">Sell with us</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text">Presh eXclusive</span></a>
+        <form class="search-box" action="products.html" method="get">
+          <span class="search-icon">⌕</span>
+          <input type="search" name="search" id="catalog-search" placeholder="Search tops, shirts, trousers, dresses..." aria-label="Search products" />
+        </form>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="products.html#new-arrivals">New Arrivals</a>
+          <a href="account.html">Track Order</a>
+          <a href="account.html">Account</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-link" href="account.html" aria-label="Wishlist">♡</a>
+          <a class="cart-link" href="cart.html" aria-label="Cart">Shopping Bag <span id="cart-count">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container page-top">
+          <div>
+            <span class="eyebrow">Shop catalog</span>
+            <h1>Shop Presh eXclusive</h1>
+            <p>Browse dresses, tops, sets, accessories and beauty. Delivery available nationwide.</p>
+          </div>
+        </div>
+
+        <div class="container filter-panel">
+          <div class="filter-bar">
+            <input id="catalog-search-main" class="filter-input" type="search" placeholder="Search products..." />
+            <select id="catalog-category" class="filter-select" aria-label="Select category">
+              <option value="all">All categories</option>
+              <option value="corporate">Corporate</option>
+              <option value="sets">Set pieces</option>
+              <option value="dresses">Dresses</option>
+              <option value="tops">Tops</option>
+              <option value="bottoms">Bottoms</option>
+              <option value="accessories">Accessories</option>
+              <option value="beauty">Beauty</option>
+            </select>
+            <select id="catalog-sort" class="filter-select" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+            <button class="secondary-btn" type="button">Filters</button>
+          </div>
+
+          <div class="category-pills">
+            <button type="button" class="pill active" data-category="all">All</button>
+            <button type="button" class="pill" data-category="corporate">Corporate</button>
+            <button type="button" class="pill" data-category="sets">Set pieces</button>
+            <button type="button" class="pill" data-category="dresses">Dresses</button>
+            <button type="button" class="pill" data-category="tops">Top</button>
+            <button type="button" class="pill" data-category="bottoms">Bottoms</button>
+            <button type="button" class="pill" data-category="accessories">Accessories</button>
+            <button type="button" class="pill" data-category="beauty">Beauty</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-shell">
+        <div class="container">
+          <div class="toolbar">
+            <strong id="result-count">8 products</strong>
+            <span>Port Harcourt, Uyo, Lagos and nationwide delivery.</span>
+          </div>
+          <div id="catalog-grid" class="catalog-grid"></div>
+          <nav class="catalog-pagination" id="catalog-pagination" aria-label="Product pages"></nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text">Presh eXclusive</span></a>
+          <p>Fashion-first shopping for women who want standout style, ease, and confidence.</p>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="index.html">About Presh eXclusive</a></li>
+            <li><a href="account.html">Customer support</a></li>
+            <li><a href="account.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Shopping</h4>
+          <ul>
+            <li><a href="products.html">Delivery information</a></li>
+            <li><a href="cart.html">Track order</a></li>
+            <li><a href="checkout.html#store-policies">Delivery, returns and refunds</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Business</h4>
+          <ul>
+            <li><a href="account.html">Sell with us</a></li>
+            <li><a href="checkout.html">Payment info</a></li>
+            <li><a href="admin.html">Admin demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+2348037609748">0803 760 9748</a></li>
+            <li><a href="https://wa.me/2348037609748" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.tiktok.com/@presh.exclusive" target="_blank" rel="noreferrer">TikTok @Presh.exclusive</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Presh eXclusive</span>
+        <span>Privacy Policy • Terms & Conditions</span>
+      </div>
+    </footer>
+
+    <script src="catalog-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
